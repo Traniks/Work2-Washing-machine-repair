@@ -1,0 +1,98 @@
+@media (max-width:1000px) {
+    main h3[data-v-c046ed3e] {
+        font-size: 3em;
+    }
+    main h1[data-v-c046ed3e] {
+        font-size: 7em;
+    }
+    .contact-text h1[data-v-5896af8b] {
+        font-size: 4em;
+    }
+}
+h1[data-v-8aaa8106] {
+    font-size: 3em;
+}
+h3[data-v-8aaa8106] {
+    font-size: 1.6em;
+}
+@media (max-width:1000px) {
+    button.fancy-button {
+        font-size: 2.3em;
+    }
+}
+.feature p[data-v-5896af8b] {
+    font-size: 24px;
+}
+.heading[data-v-c046ed3e] {
+    font-size: 7em
+}
+@media (max-width:1000px) {
+    .opportunity-header {
+        font-size: 4em;
+    }
+}
+h3 {
+    font-size: 1.6em;
+}
+@media (max-width:1200px) {
+    h3[data-v-c00191d9] {
+        font-size: 1.7em;
+    }
+    p[data-v-c00191d9] {
+        font-size: 1.7em
+    }
+}
+@media (max-width:1000px) {
+    .subheading[data-v-c046ed3e] {
+        font-size: 3em;
+    }
+    h3[data-v-3137ddbc] {
+        font-size: 1.8em;
+    }
+    p[data-v-3137ddbc] {
+        font-size: 1.8em
+    }
+}
+.advantage h2[data-v-c046ed3e] {
+    font-size: 3.3em
+}
+.advantage p[data-v-c046ed3e] {
+    font-size: 2em;
+}
+.number-heading h1[data-v-70fe3462] {
+    font-size: 8em;
+}
+@media (max-width:1000px) {
+    .card p[data-v-70fe3462] {
+        font-size: 1.3em
+    }
+}
+
+main h1[data-v-c046ed3e] {
+    font-size: clamp(5em, 17vw, 13em);
+}
+
+/* Traniks css - стили фронтендера */
+
+.subtitle span {
+    background-color: #F0F2E5;
+    /* display: inline-block; */
+    padding: 5px;
+    line-height: 34px;
+}
+.icon[data-v-719c0bb5] {
+    background-color: rgba(255, 255, 255, 0);
+}
+.icon[data-v-719c0bb5]:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+.selected[data-v-719c0bb5] {
+    background-color: rgba(255, 255, 255, 0) !important;
+    transform: scale(1.2);
+}
+#all-modal-phone:hover {
+    transform: scale(1.0) !important;
+}
+#all-modal-phone.selected {
+    transform: scale(1.0) !important;
+}
