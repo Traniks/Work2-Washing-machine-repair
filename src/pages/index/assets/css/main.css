@@ -440,7 +440,7 @@ h2{
     /* margin-top: 252px; */
 }
 .two {
-    background: url("../img/bg/fon-2.png");
+    background: url("../img/bg/fon-2-min.webp");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -563,7 +563,7 @@ h2{
 .step_card{
     width: 260px;
     height: 401px;
-    background-image: url("../img/fon/block_step-fon.png");
+    background-image: url("../img/fon/block_step-fon.webp");
     padding-left: 20px;
     padding-right: 10px;
     background-repeat: no-repeat;
@@ -652,7 +652,7 @@ h2{
 .card_head{
     width: 260px;
     height: 141px;
-    background-image: url("../img/fon/fon_card.png");
+    background-image: url("../img/fon/fon_card.webp");
     background-repeat: no-repeat;
     position: relative;
 }
@@ -1035,7 +1035,7 @@ h2{
     font-family: Montserrat;
     display: grid;
     justify-content: center;
-    background-image: url("../img/bg/fon-4.png");
+    background-image: url("../img/bg/fon-4-min.webp");
     background-position-y: -665px;
 }
 
@@ -1407,7 +1407,7 @@ h2{
 .protect{
     padding: 80px 0 0 0;
     /* margin-top: 84px; */
-    background: url("../img/bg/fon-5.png");
+    background: url("../img/bg/fon-5-min.webp");
     background-repeat: no-repeat;
     background-size: 100% 200%;
     background-position-y: -800px;
@@ -1422,7 +1422,7 @@ h2{
 }
 .protect__card{
     position: relative;
-    background-image: url("../img/fon/fon-protected.png");
+    background-image: url("../img/fon/fon-protected.webp");
     width: 360px;
     height: 241px;
     padding: 32px 20px 20px 20px;
@@ -1442,7 +1442,7 @@ h2{
     background-image: url("../icons/58pxcircle.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
 }
 .protect__card .boll_rad{
     top: -21px;
@@ -1916,7 +1916,7 @@ input[type="checkbox"]:checked + label::before {
     margin:0;
 }
 .footer {
-    background: url("../img/bg/fon-6.png");
+    background: url("../img/bg/fon-6-min.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

@@ -1,5 +1,12 @@
 import Swiper from 'swiper'
-import { Pagination, Navigation, Autoplay, Keyboard, EffectCoverflow } from 'swiper/modules'
+import {
+	Pagination,
+	Navigation,
+	Autoplay,
+	Keyboard,
+	EffectCoverflow,
+	Thumbs,
+} from 'swiper/modules'
 
 const swiperFeedback = new Swiper('#feedback-slider', {
 	modules: [Pagination, Navigation, EffectCoverflow],
@@ -51,15 +58,23 @@ window.addEventListener('load', setNum);
 window.addEventListener('resize', setNum);
 
 
-const swiperReviews = new Swiper('#reviews-slider', {
+const swiper = new Swiper('.mySwiper', {
 	loop: true,
-	spaceBetween: 10,
-	slidesPerView: 4,
+	spaceBetween: 20,
+	slidesPerView: 3,
 	freeMode: true,
 	watchSlidesProgress: true,
+	breakpoints: {
+		1000: {
+			slidesPerView: 5,
+		},
+		850: {
+			slidesPerView: 4,
+		},
+	},
 })
 const swiper2 = new Swiper('.mySwiper2', {
-	modules: [Navigation],
+	modules: [Navigation, Thumbs],
 	loop: true,
 	spaceBetween: 10,
 	navigation: {
