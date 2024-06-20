@@ -54,6 +54,7 @@ body{
     justify-content: center;
     position: relative;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 /* .modalbox__intro {
     position: relative;
@@ -96,7 +97,7 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 700px;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 35px;
     border-bottom-left-radius: 56px;
     border-bottom-right-radius: 56px;
@@ -108,6 +109,31 @@ body{
         0px 308px 123px 0px rgba(45, 45, 47, 0.06),
         0px 481px 135px 0px rgba(45, 45, 47, 0.01);
 }
+.modalbox__intro-content {
+    background-color: #0d1218;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+    margin-top: -6px;
+    box-shadow: 0px 19px 42px 0px rgba(45, 45, 47, .43), 0px 77px 77px 0px rgba(45, 45, 47, .37), 0px 173px 104px 0px rgba(45, 45, 47, .22), 0px 308px 123px 0px rgba(45, 45, 47, .06), 0px 481px 135px 0px rgba(45, 45, 47, .01);
+}
+
+.modalbox__intro-qr {
+    width: 140px;
+    height: 140px;
+    padding: 24.5px;
+    border-radius: 80px;
+    background-color: #fff;
+    /* margin-left: 40px; */
+    /* margin-top: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .modalbox__intro form .modalbox__input {
     border: 0px none;
@@ -117,13 +143,28 @@ body{
     margin: 0 auto;
     max-width: 280px;
     min-width: 260px;
-    height: 100px;
+    height: 80px;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
     text-align: center;
-    color: rgba(50, 50, 50, 0.5);
+    /* color: rgba(50, 50, 50, 0.5); */
+}
+
+.modalbox__intro form .modalbox__textarea {
+    margin: 30px auto 0 auto;
+    height: 160px;
+    outline: 0px none;
+    border: none;
+    max-width: 280px;
+    min-width: 260px;
+    height: 120px;
+    border-radius: 85px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
 }
 
 .modalbox__intro form button {
@@ -141,8 +182,14 @@ body{
     border: 0px none;
     border-radius: 85px;
     outline: 0px none;
-    margin: 40px auto;
+    margin: 30px auto 40px auto;
     background-color: rgba(33, 155, 224, 1);
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.modalbox__intro form button:hover {
+    background: rgb(22 111 161);
 }
 
 .modalbox__subtitle {
@@ -265,8 +312,21 @@ nav .watt img{
     margin: 15px auto 0 auto;
     display: block;
 }
+nav .watt svg{
+    height: clamp(1.25rem, 0.577rem + 2.56vw, 2.5rem);
+    margin: 15px auto 0 auto;
+    display: block;
+}
+nav .watt svg:hover {
+    rect {
+        fill: #1b6e29;
+    }
+}
 @media (min-width: 626px) {
     nav .watt img {
+        margin: 0;
+    }
+    nav .watt svg {
         margin: 0;
     }
 }
@@ -344,6 +404,10 @@ h2{
     z-index: 1;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+}
+.navigation .but button:hover {
+    background: rgb(22 111 161);
 }
 .navigation .but::after {
     content: "";
@@ -435,6 +499,7 @@ h2{
     text-align: center;
     margin-top: 24px;
     color: #fff;
+    text-wrap: balance;
 }
 .block_cards{
     /* margin-top: 252px; */
@@ -506,6 +571,12 @@ h2{
     z-index: 1;
     border: none;
     margin: 80px auto 0 auto;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.but_rad button:hover {
+    background: rgb(22, 111, 161);
 }
 .but_rad::after {
     content: "";
@@ -837,16 +908,23 @@ h2{
 .price__table tbody tr {
     border-radius: 10px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .price__table tbody tr:nth-child(even) {
     background-color: rgba(34, 41, 48, 1);
+}
+.price__table tbody tr:nth-child(even):hover {
+    background-color: rgb(50 65 80);
 }
 
 
 .price__table tbody tr:nth-child(odd) {
     border-radius: 10px;
     background-color: rgba(13, 18, 24, 1);
+}
+.price__table tbody tr:nth-child(odd):hover {
+    background-color: rgb(50 65 80);
 }
 
 .price__table tbody td {
@@ -1026,10 +1104,13 @@ h2{
     height: 100px;
     border-radius: 85px;
     color: #fff;
+
+    cursor: pointer;
+    transition: 0.5s;
 }
-
-
-
+.btn__blue:hover {
+    background: rgb(22, 111, 161);
+}
 .zone {
     padding: 45px 0;
     font-family: Montserrat;
@@ -1165,6 +1246,11 @@ h2{
     justify-content: center;
 }
 
+.zone__form-ws {
+    display: flex;
+    align-items: center;
+}
+
 .zone__form-tel a {
     text-decoration: none;
     color: #fff;
@@ -1229,7 +1315,7 @@ h2{
     font-size: 17px;
     line-height: 18px;
     width: 200px;
-    height: 60px;
+    height: 50px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
 .carousel__pagination{
@@ -1261,6 +1347,7 @@ h2{
     justify-content: center;
 }
 .RobSan .Rob{
+    text-align: center;
     border-right: 1px solid;
     color: #fff;
     padding-right: 23px;
@@ -1648,6 +1735,7 @@ h2{
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
 }
 @media (max-width: 1100px) {
     .find__map-head form {
@@ -1662,7 +1750,7 @@ h2{
 
 .find__map-head form input {
     width: 260px;
-    height: 100px;
+    height: 80px;
     border-radius: 85px;
     font-size: 16px;
     font-weight: 500;
@@ -1757,13 +1845,20 @@ h2{
     text-align: center;
     color: #fff;
     margin-top: 25px;
+    text-decoration: none;
 }
 .block-left a img{
     width: 180.8px;
-    /* height: 40px; */
     margin-top: 14px;
-    /* border-bottom: 3px dashed rgba(255, 255, 255, 0.2); */
-    /* padding-bottom: 40px; */
+}
+.block-left a svg{
+    width: 180.8px;
+    margin-top: 14px;
+}
+.block-left a svg:hover {
+    rect {
+        fill: #1b6e29;
+    }
 }
 .block-left hr {
     border: none;
@@ -1805,7 +1900,7 @@ h2{
 }
 .input__row1{
     display: flex;
-    height: 100px;
+    height: 80px;
 }
 .block-right input{
     height: 100%;
@@ -1816,6 +1911,7 @@ h2{
     line-height: 19.5px;
     text-align: center;
     border-radius: 85px;
+    outline: 0px none;
 }
 .input__row2{
     display: flex;
@@ -1832,6 +1928,7 @@ h2{
 }
 .input__row2 div div{
     display: flex;
+    width: 285px;
 }
 .input__row2 div button{
     border: none;
@@ -1846,6 +1943,12 @@ h2{
     margin-bottom: 18px;
     text-transform: uppercase;
     width: 280px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input__row2 div button:hover {
+    background: rgb(22, 111, 161);
 }
 @media(max-width: 1200px) {
     .input__row2 div button {
@@ -1881,6 +1984,8 @@ label {
     height: 40px;
     border: 2px solid rgba(106, 106, 106, 1);
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -1919,6 +2024,9 @@ input[type="checkbox"]:checked + label::before {
     background: url("../img/bg/fon-6-min.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+input:focus::placeholder {
+    opacity: 0;
 }
 @media screen and (max-width: 700px) {
     .price {
@@ -2157,6 +2265,12 @@ input[type="checkbox"]:checked + label::before {
         text-wrap: nowrap;
     } */
     nav .watt img{
+        display: block;
+        height: 20px;
+        /* margin-left: 25%; */
+        margin: 5px auto 0 auto;
+    }
+    nav .watt svg{
         display: block;
         height: 20px;
         /* margin-left: 25%; */
@@ -2415,11 +2529,11 @@ input[type="checkbox"]:checked + label::before {
         margin: 0 auto;
     }
 }
-@media screen and (max-width:580px) {
+/* @media screen and (max-width:580px) {
     .RobSan {
         display: none;
     }
-}
+} */
 @media screen and (max-width:700px) {
     .price__mob {
         padding: 50px 0;
@@ -2521,11 +2635,17 @@ input[type="checkbox"]:checked + label::before {
     .modalbox__intro h1 {
         width: 300px;
     }
+    .modalbox__intro-ws {
+        font-size: 20px !important;
+    }
     .modalbox__head::after {
         top: -40%;
         left: 258px;
     }
     .modalbox__intro form {
+        margin-top: -18px;
+    }
+    .modalbox__intro-content {
         margin-top: -18px;
     }
 }
@@ -2567,11 +2687,24 @@ input[type="checkbox"]:checked + label::before {
         margin-top: 0px;
         padding: 40px 0;
     }
+    .modalbox__intro-content {
+        margin-top: 0px;
+        padding: 40px 0;
+    }
+    .modalbox__intro-ws {
+        width: auto !important;
+    }
     .modalbox__intro form .modalbox__input {
         max-width: unset;
         min-width: auto;
         width: 240px;
         height: 80px;
+    }
+    .modalbox__intro form .modalbox__textarea {
+        max-width: unset;
+        min-width: auto;
+        width: 240px;
+        height: 100px;
     }
     .modalbox__intro form button {
         width: 240px;

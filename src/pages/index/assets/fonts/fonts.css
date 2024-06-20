@@ -7,7 +7,8 @@
         url('Montserrat-Medium.woff') format('woff'),
         url('Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -17,7 +18,8 @@
         url('Montserrat-Bold.woff') format('woff'),
         url('Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -27,7 +29,8 @@
         url('Montserrat-ExtraBold.woff') format('woff'),
         url('Montserrat-ExtraBold.ttf') format('truetype');
     font-weight: 800;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -37,7 +40,8 @@
         url('Montserrat-Black.woff') format('woff'),
         url('Montserrat-Black.ttf') format('truetype');
     font-weight: 900;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Шрифт для номеров */
@@ -49,7 +53,8 @@
         url('Benzin-Regular.woff') format('woff'),
         url('Benzin-Regular.ttf') format('truetype');
     font-weight: 400;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Benzin';
@@ -59,5 +64,6 @@
         url('Benzin-Bold.woff') format('woff'),
         url('Benzin-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-style: swap;
+    font-style: normal;
+    font-display: swap;
 }
